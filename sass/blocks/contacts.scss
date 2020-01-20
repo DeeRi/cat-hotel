@@ -1,0 +1,30 @@
+.contacts {
+  padding-top: 40px;
+  text-align: left;
+  background-color: #fac663;
+}
+
+.contacts__heading {
+  text-align: left;
+}
+
+.contacts__list {
+  @include reset-list;
+  line-height: 18px;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__name {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.contacts__text {
+  margin: 0;
+}

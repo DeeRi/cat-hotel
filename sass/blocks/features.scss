@@ -1,0 +1,38 @@
+.features__list {
+  @include reset-list;
+}
+
+.features__item {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+}
+
+.features__image {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #fac663;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100px;
+
+  &--temperature {
+    background-image: url("../img/feature_sign1.svg");
+  }
+  &--video {
+    background-image: url("../img/feature_sign2.svg");
+  }
+  &--taxi {
+    background-image: url("../img/feature_sign3.svg");
+  }
+  &--food {
+    background-image: url("../img/feature_sign4.svg");
+  }
+  &--walk {
+    background-image: url("../img/feature_sign5.svg");
+  }
+  &--vet {
+    background-image: url("../img/feature_sign6.svg");
+  }
+}

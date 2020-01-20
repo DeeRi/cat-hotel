@@ -1,0 +1,17 @@
+.menu-button {
+    width: 24px;
+    height: 18px;
+    border: none;
+    background-color: #ffffff;
+    &--open {
+      background-image: url("../img/menu-button__open.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    &--close {
+      background-image: url("../img/menu-button__close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }

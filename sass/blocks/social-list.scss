@@ -1,0 +1,30 @@
+.social-list {
+  @include reset-list;
+  display: flex;
+}
+
+.social-list__item {
+  margin-right: 18px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--facebook {
+    background-image: url("../img/facebook.svg");
+  }
+  &--inst {
+    background-image: url("../img/inst.svg");
+  }
+  &--fb {
+    background-image: url("../img/vk.svg");
+  }
+}

@@ -4,125 +4,266 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Котейка | Гостиница для котов и кошек в Петербурге</title>
   </head>
   <body>
     <header class="header">
-      <a href=""
-        ><img class="header__logo logo" src="" alt="Логотип гостиницы"
-      /></a>
-      <a
-        class="header__button menu-button"
-        href="#"
-        aria-label="Open menu button"
-      >
-        <span class="menu-icon-1"></span>
-        <span class="menu-icon-2"></span>
-        <span class="menu-icon-3"></span>
-      </a>
-      <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="">Почему мы?</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="">Номера</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="">Отзывы</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="">Как нас найти</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="header__wrapper">
+          <a href=""
+            ><img
+              class="header__logo logo"
+              src="img/logo.svg"
+              alt="Логотип гостиницы"
+          /></a>
+          <button
+            type="button"
+            class="header__toggle menu-button menu-button--open"
+          ></button>
+        </div>
+        <nav
+          class="header__navigation header__navigation--closed header__navigation--nojs"
+        >
+          <ul class="header__list site-list">
+            <li class="header__item site-list__item">
+              <a class="header__link site-list__link" href="">Почему мы?</a>
+            </li>
+            <li class="header__item site-list__item">
+              <a class="header__link site-list__link" href="">Номера</a>
+            </li>
+            <li class="header__item site-list__item">
+              <a class="header__link site-list__link" href="">Отзывы</a>
+            </li>
+            <li class="header__item site-list__item">
+              <a class="header__link site-list__link" href="">Как нас найти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="promo">
-        <span class="promo__text">Санкт-Петербург</span>
-        <h1 class="promo__heading">Котейка</h1>
-        <p class="promo__capture">Уютная гостиница для котов и кошек</p>
-        <a class="promo__button button-book button-book--white" href=""
-          >Забронировать</a
-        >
-      </section>
-
-      <section class="features">
-        <h2 class="features__heading">Почему мы?</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__name">Комфортная температура</h3>
-            <p class="features__text">
-              Во всех номерах поддерживается комфортная температура в пределах
-              23 - 25 градусов. В каждом номере можно дополнительно
-              отрегулировать температуру.
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__name">Видеонаблюдение</h3>
-            <p class="features__text">
-              Мы предоставляем доступ в нашу систему. Вы сможете следить за
-              своим питомцем со своего смартфона или компьютера.
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__name">Услуги Зоотакси</h3>
-            <p class="features__text">
-              Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__name">Сбалансированное питание</h3>
-            <p class="features__text">
-              Вы можете привезти свой корм или доверить рацион своего питомца
-              нашим профессионалам.
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__name">Ежедневные прогулки</h3>
-            <p class="features__text">
-              По вашему желанию мы выгуливаем вашего питомца два раза в день на
-              специализированной закрытой территории.
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__name">Лучшие ветеринары</h3>
-            <p class="features__text">
-              В гостинице 24 часа дежурит ветеринарный врач, который окажет
-              любую помощь в случае необходимости.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="rooms">
-        <h2 class="rooms__heading">Номера</h2>
-        <div class="owl-carousel">
-          <div class="rooms__item">
-            <img src="" alt="" />
-            <ul class="rooms__list">
-              <h3 class="rooms__name">Эконом плюс</h3>
-              <li class="rooms__feature">Площадь - 0,90 м2</li>
-              <li class="rooms__feature">Размеры (ШхГхВ) 90х100х180 см</li>
-              <li class="rooms__feature">Цена за сутки: 200₽</li>
-            </ul>
-            <a class="promo__button button-book button-book--red" href=""
-              >Забронировать</a
-            >
-          </div>
-          <div></div>
-          <div></div>
+        <div class="container">
+          <span class="promo__text">Санкт-Петербург</span>
+          <h1 class="promo__heading">Котейка</h1>
+          <p class="promo__capture">Уютная гостиница для котов и кошек</p>
+          <a class="promo__button order-button order-button--white" href=""
+            >Забронировать</a
+          >
         </div>
       </section>
 
-      
+      <section class="section features">
+        <div class="container">
+          <h2 class="section__heading features__heading">Почему мы?</h2>
+          <ul class="features__list">
+            <li class="features__item features__item">
+              <span class="features__image features__image--temperature"></span>
+              <h3 class="features__name">Комфортная температура</h3>
+              <p class="features__text">
+                Во всех номерах поддерживается комфортная температура в пределах
+                23 - 25 градусов. В каждом номере можно дополнительно
+                отрегулировать температуру.
+              </p>
+            </li>
+            <li class="features__item features__item">
+              <span class="features__image features__image--video"></span>
+              <h3 class="features__name">Видеонаблюдение</h3>
+              <p class="features__text">
+                Мы предоставляем доступ в нашу систему. Вы сможете следить за
+                своим питомцем со своего смартфона или компьютера.
+              </p>
+            </li>
+            <li class="features__item features__item">
+              <span class="features__image features__image--taxi"></span>
+              <h3 class="features__name">Услуги Зоотакси</h3>
+              <p class="features__text">
+                Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
+              </p>
+            </li>
+            <li class="features__item">
+              <span class="features__image features__image--food"></span>
+              <h3 class="features__name">Сбалансированное питание</h3>
+              <p class="features__text">
+                Вы можете привезти свой корм или доверить рацион своего питомца
+                нашим профессионалам.
+              </p>
+            </li>
+            <li class="features__item">
+              <span class="features__image features__image--walk"></span>
+              <h3 class="features__name">Ежедневные прогулки</h3>
+              <p class="features__text">
+                По вашему желанию мы выгуливаем вашего питомца два раза в день
+                на специализированной закрытой территории.
+              </p>
+            </li>
+            <li class="features__item">
+              <span class="features__image features__image--vet"></span>
+              <h3 class="features__name">Лучшие ветеринары</h3>
+              <p class="features__text">
+                В гостинице 24 часа дежурит ветеринарный врач, который окажет
+                любую помощь в случае необходимости.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rooms section">
+        <div class="container">
+          <h2 class="rooms__heading section__heading">Номера</h2>
+          <div class="owl-carousel owl-theme owl1">
+            <div class="rooms__item">
+              <img src="img/room1.png" alt="" />
+              <h3 class="rooms__name">Эконом плюс</h3>
+              <ul class="rooms__list">
+                <li class="rooms__feature">Площадь - 0,90 м2</li>
+                <li class="rooms__feature">Размеры (ШхГхВ) 90х100х180 см</li>
+                <li class="rooms__feature">Цена за сутки: 200₽</li>
+              </ul>
+              <a class="promo__button order-button order-button--red" href=""
+                >Забронировать</a
+              >
+            </div>
+            <div class="rooms__item">
+              <img src="img/room2.png" alt="" />
+              <h3 class="rooms__name">Комфорт</h3>
+              <ul class="rooms__list">
+                <li class="rooms__feature">Площадь - 1,13 м2</li>
+                <li class="rooms__feature">Размеры (ШхГхВ) 100х125х180 см</li>
+                <li class="rooms__feature">Цена за сутки: 250₽</li>
+              </ul>
+              <a class="promo__button order-button order-button--red" href=""
+                >Забронировать</a
+              >
+            </div>
+            <div class="rooms__item">
+              <img src="img/room3.png" alt="" />
+              <h3 class="rooms__name">Сьют</h3>
+              <ul class="rooms__list">
+                <li class="rooms__feature">Площадь - 1,56 м2</li>
+                <li class="rooms__feature">Размеры (ШхГхВ) 125х125х180 см</li>
+                <li class="rooms__feature">Цена за сутки: 350₽</li>
+              </ul>
+              <a class="promo__button order-button order-button--red" href=""
+                >Забронировать</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback section">
+        <div class="container">
+          <h2 class="feedback__heading section__heading">Отзывы</h2>
+          <div class="owl-carousel owl-theme owl1">
+            <div class="feedback__item">
+              Первый раз пришлось оставить нашего котика в гостинице, очень
+              переживали. Администратор Мария каждый день высылала нам фото
+              нашего питомца, рассказывала, как он себя чувствует. И мы и котик
+              остались очень довольны!
+            </div>
+            <div class="feedback__item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae sint ipsum facilis excepturi quisquam placeat rerum
+              itaque, eligendi dolores?
+            </div>
+            <div class="feedback__item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsa
+              enim hic facere cum vel consectetur nesciunt tempora optio?
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts">
+        <div class="container">
+          <h2 class="section__heading contacts__heading">Как нас найти</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__name">Адрес</h3>
+              <p class="contacts__text">
+                Санкт-Петербург, ул Большая Конюшенная, д 19
+              </p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__name">Режим работы</h3>
+              <p class="contacts__text">Ежедневно, с 9:00 до 20:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__name">Телефон</h3>
+              <p class="contacts__text">8 (800) 333-55-99</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__name">E-mail</h3>
+              <p class="contacts__text">info@cat-hotel.ru</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__name">
+                Социальные сети
+              </h3>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a
+                    class="social-list__link social-list__link--facebook"
+                    href=""
+                    aria-label="Facebook"
+                  ></a>
+                </li>
+                <li class="social-list__item">
+                  <a
+                    class="social-list__link social-list__link--inst"
+                    href=""
+                    aria-label="Instagram"
+                  ></a>
+                </li>
+                <li class="social-list__item">
+                  <a
+                    class="social-list__link social-list__link--vk"
+                    href=""
+                    aria-label="VK"
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <footer>
+      <div class="container">
+      <a href="#"
+        ><img
+          class="header__logo logo"
+          src="img/logo.svg"
+          alt="Логотип гостиницы"
+      /></a>
+      <nav class="footer__navigation">
+        <ul class="footer__list site-list">
+          <li class="footer__item site-list__item">
+            <a class="footer__link site-list__link" href="">Почему мы?</a>
+          </li>
+          <li class="footer__item site-list__item">
+            <a class="footer__link site-list__link" href="">Номера</a>
+          </li>
+          <li class="footer__item site-list__item">
+            <a class="footer__link site-list__link" href="">Отзывы</a>
+          </li>
+          <li class="footer__item site-list__item">
+            <a class="footer__link site-list__link" href="">Как нас найти</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

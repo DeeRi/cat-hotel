@@ -1,0 +1,25 @@
+.rooms__item {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.rooms__list {
+  @include reset-list;
+}
+
+.rooms__feature {
+  margin-bottom: 17px;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: #fac663;
+  }
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
