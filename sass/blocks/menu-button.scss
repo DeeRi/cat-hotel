@@ -15,3 +15,9 @@
       background-position: center;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    .menu-button {
+    display: none;
+    }
+  }

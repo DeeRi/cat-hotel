@@ -37,3 +37,25 @@ img {
   line-height: 33px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 678px;
+  }
+
+  .section__heading {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .container {
+    width: 1170px;
+  }
+}

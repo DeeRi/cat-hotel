@@ -11,15 +11,22 @@
     <title>Котейка | Гостиница для котов и кошек в Петербурге</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="header header--main">
+      <div class="container header__container">
         <div class="header__wrapper">
-          <a href=""
-            ><img
-              class="header__logo logo"
-              src="img/logo.svg"
-              alt="Логотип гостиницы"
-          /></a>
+          <a class="header__link" href="">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo__tablet.svg"
+              />
+              <img
+                class="header__logo logo"
+                src="img/logo.svg"
+                alt="Логотип гостиницы"
+              />
+            </picture>
+          </a>
           <button
             type="button"
             class="header__toggle menu-button menu-button--open"
@@ -48,13 +55,15 @@
 
     <main>
       <section class="promo">
-        <div class="container">
-          <span class="promo__text">Санкт-Петербург</span>
-          <h1 class="promo__heading">Котейка</h1>
-          <p class="promo__capture">Уютная гостиница для котов и кошек</p>
-          <a class="promo__button order-button order-button--white" href=""
-            >Забронировать</a
-          >
+        <div class="container promo__container">
+          <div class="promo__content">
+            <span class="promo__text">Санкт-Петербург</span>
+            <h1 class="promo__heading">Котейка</h1>
+            <p class="promo__capture">Уютная гостиница для котов и кошек</p>
+            <a class="promo__button order-button order-button--white" href=""
+              >Забронировать</a
+            >
+          </div>
         </div>
       </section>
 
@@ -118,41 +127,105 @@
         <div class="container">
           <h2 class="rooms__heading section__heading">Номера</h2>
           <div class="owl-carousel owl-theme owl1">
-            <div class="rooms__item">
-              <img src="img/room1.png" alt="" />
-              <h3 class="rooms__name">Эконом плюс</h3>
-              <ul class="rooms__list">
-                <li class="rooms__feature">Площадь - 0,90 м2</li>
-                <li class="rooms__feature">Размеры (ШхГхВ) 90х100х180 см</li>
-                <li class="rooms__feature">Цена за сутки: 200₽</li>
-              </ul>
-              <a class="promo__button order-button order-button--red" href=""
-                >Забронировать</a
-              >
+            <div class="rooms__item room-card">
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="img/room1_desktop.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/room1_tablet.png"
+                />
+                <img
+                  class="room-card__image"
+                  src="img/room1.png"
+                  alt="Комната класса Эконом"
+                  width="290"
+                  height="192"
+                />
+              </picture>
+              <div class="room-card__text">
+                <h3 class="room-card__name">Эконом плюс</h3>
+                <ul class="room-card__info-list">
+                  <li class="room-card__info">
+                    Площадь - 0,90 м2
+                  </li>
+                  <li class="room-card__info">
+                    Размеры (ШхГхВ) 90х100х180 см
+                  </li>
+                  <li class="room-card__info">
+                    Цена за сутки: 200₽
+                  </li>
+                </ul>
+                <a class="order-button order-button--red" href=""
+                  >Забронировать</a
+                >
+              </div>
             </div>
-            <div class="rooms__item">
-              <img src="img/room2.png" alt="" />
-              <h3 class="rooms__name">Комфорт</h3>
-              <ul class="rooms__list">
-                <li class="rooms__feature">Площадь - 1,13 м2</li>
-                <li class="rooms__feature">Размеры (ШхГхВ) 100х125х180 см</li>
-                <li class="rooms__feature">Цена за сутки: 250₽</li>
-              </ul>
-              <a class="promo__button order-button order-button--red" href=""
-                >Забронировать</a
-              >
+            <div class="rooms__item room-card">
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="img/room2_desktop.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/room2_tablet.png"
+                />
+                <img
+                  class="room-card__image"
+                  src="img/room2.png"
+                  alt="Комната класса Комфорт"
+                  width="290"
+                  height="192"
+                />
+              </picture>
+              <div class="room-card__text">
+                <h3 class="room-card__name">Комфорт</h3>
+                <ul class="room-card__info-list">
+                  <li class="room-card__info">Площадь - 1,13 м2</li>
+                  <li class="room-card__info">
+                    Размеры (ШхГхВ) 100х125х180 см
+                  </li>
+                  <li class="room-card__info">Цена за сутки: 250₽</li>
+                </ul>
+                <a class="order-button order-button--red" href=""
+                  >Забронировать</a
+                >
+              </div>
             </div>
-            <div class="rooms__item">
-              <img src="img/room3.png" alt="" />
-              <h3 class="rooms__name">Сьют</h3>
-              <ul class="rooms__list">
-                <li class="rooms__feature">Площадь - 1,56 м2</li>
-                <li class="rooms__feature">Размеры (ШхГхВ) 125х125х180 см</li>
-                <li class="rooms__feature">Цена за сутки: 350₽</li>
-              </ul>
-              <a class="promo__button order-button order-button--red" href=""
-                >Забронировать</a
-              >
+            <div class="rooms__item room-card">
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="img/room3_desktop.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/room3_tablet.png"
+                />
+                <img
+                  class="room-card__image"
+                  src="img/room3.png"
+                  alt="Комната класса Сьют"
+                  width="290"
+                  height="192"
+                />
+              </picture>
+              <div class="room-card__text">
+                <h3 class="room-card__name">Сьют</h3>
+                <ul class="room-card__info-list">
+                  <li class="room-card__info">Площадь - 1,56 м2</li>
+                  <li class="room-card__info">
+                    Размеры (ШхГхВ) 125х125х180 см
+                  </li>
+                  <li class="room-card__info">Цена за сутки: 350₽</li>
+                </ul>
+                <a class="order-button order-button--red" href=""
+                  >Забронировать</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -236,30 +309,41 @@
       </section>
     </main>
 
-    <footer>
+    <header class="header header--second">
+      <div class="header__container container">
+        <a class="header__link" href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo__tablet.svg" />
+            <img
+              class="header__logo logo"
+              src="img/logo.svg"
+              alt="Логотип гостиницы"
+            />
+          </picture>
+        </a>
+        <nav class="navigation">
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Почему мы?</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Номера</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Отзывы</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Как нас найти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <footer class="footer">
       <div class="container">
-      <a href="#"
-        ><img
-          class="header__logo logo"
-          src="img/logo.svg"
-          alt="Логотип гостиницы"
-      /></a>
-      <nav class="footer__navigation">
-        <ul class="footer__list site-list">
-          <li class="footer__item site-list__item">
-            <a class="footer__link site-list__link" href="">Почему мы?</a>
-          </li>
-          <li class="footer__item site-list__item">
-            <a class="footer__link site-list__link" href="">Номера</a>
-          </li>
-          <li class="footer__item site-list__item">
-            <a class="footer__link site-list__link" href="">Отзывы</a>
-          </li>
-          <li class="footer__item site-list__item">
-            <a class="footer__link site-list__link" href="">Как нас найти</a>
-          </li>
-        </ul>
-      </nav>
+        <p class="footer__text">&#9400; 2019 Все права защищены</p>
+        <a class="footer__link" href="">Политика конфиденциальности</a>
       </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>

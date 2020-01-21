@@ -1,14 +1,18 @@
 .site-list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .site-list__link {
-  text-decoration: none;
-  font-family: "Rubik", Arial, sans-serif;
+  display: block;
+  font-family: "Lato", Arial, sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
   color: $primary-text-color;
+  text-decoration: none;
+  width: 128px;
 }
-
