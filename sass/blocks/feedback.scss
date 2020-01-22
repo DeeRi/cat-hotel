@@ -1,3 +1,7 @@
+.feedback__list {
+  @include reset-list;
+}
+
 .feedback__item {
   padding: 25px 21px 25px 40px;
   background: #ffffff;
@@ -16,5 +20,40 @@
     background-image: url("../img/brackets.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+.feedback__blockquote {
+  margin: 0;
+}
+
+.feedback__text {
+  font-weight: 500;
+}
+
+.feedback__name,
+.feedback__date {
+  opacity: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__name,
+  .feedback__date {
+    opacity: 1;
+    font-size: 14px;
+    line-height: 17px;
+    color: #848484;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__text {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
