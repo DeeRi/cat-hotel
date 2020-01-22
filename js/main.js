@@ -10,6 +10,24 @@ $(".owl1").owlCarousel({
   }
 });
 
+$(".owl2").owlCarousel({
+  margin: 10,
+  loop: true,
+  lazyLoad: true,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 1.5,
+    },
+    1300: {
+      items: 2.5
+    }
+  }
+});
+
 
 let burger = document.querySelector(".menu-button");
 let mainNav = document.querySelector(".header__navigation");
