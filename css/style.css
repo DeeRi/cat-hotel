@@ -451,6 +451,12 @@ img {
     line-height: 19px;
   }
 }
+.feedback__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .feedback__item {
   padding: 25px 21px 25px 40px;
   background: #ffffff;
@@ -471,6 +477,39 @@ img {
   background-repeat: no-repeat;
 }
 
+.feedback__blockquote {
+  margin: 0;
+}
+
+.feedback__text {
+  font-weight: 500;
+}
+
+.feedback__name,
+.feedback__date {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .feedback__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__name,
+.feedback__date {
+    opacity: 1;
+    font-size: 14px;
+    line-height: 17px;
+    color: #848484;
+  }
+}
+@media (min-width: 1300px) {
+  .feedback__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 .social-list {
   margin: 0;
   padding: 0;
