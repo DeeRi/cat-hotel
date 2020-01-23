@@ -20,7 +20,7 @@ $(".owl2").owlCarousel({
       items: 1
     },
     768: {
-      items: 1.5,
+      items: 1.5
     },
     1300: {
       items: 2.5
@@ -28,6 +28,22 @@ $(".owl2").owlCarousel({
   }
 });
 
+let myMap;
+
+ymaps.ready(init);
+
+function init() {
+  myMap = new ymaps.Map(
+    "map",
+    {
+      center: [59.938631, 30.323055],
+      zoom: 15
+    },
+    {
+      searchControlProvider: "yandex#search"
+    }
+  );
+}
 
 let burger = document.querySelector(".menu-button");
 let mainNav = document.querySelector(".header__navigation");

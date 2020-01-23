@@ -4,6 +4,13 @@
   background-color: #fac663;
 }
 
+.contacts__map {
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+}
+
 .contacts__heading {
   text-align: left;
 }
@@ -28,3 +35,31 @@
 .contacts__text {
   margin: 0;
 }
+
+
+@media (min-width: $tablet-width) {
+.contacts {
+  position: relative;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  left: 369px;
+  height: 100%;
+  width: 399px;
+  background-image: url("../img/map_tablet.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+  
+  .contacts__map {
+    background-image: url("../img/map_desktop.png");
+    left: 551px;
+    width: 798px;
+  }
+  }

@@ -37,16 +37,22 @@
         >
           <ul class="header__list site-list">
             <li class="header__item site-list__item">
-              <a class="header__link site-list__link" href="">Почему мы?</a>
+              <a class="header__link site-list__link" href="#features"
+                >Почему мы?</a
+              >
             </li>
             <li class="header__item site-list__item">
-              <a class="header__link site-list__link" href="">Номера</a>
+              <a class="header__link site-list__link" href="#rooms">Номера</a>
             </li>
             <li class="header__item site-list__item">
-              <a class="header__link site-list__link" href="">Отзывы</a>
+              <a class="header__link site-list__link" href="#feedback"
+                >Отзывы</a
+              >
             </li>
             <li class="header__item site-list__item">
-              <a class="header__link site-list__link" href="">Как нас найти</a>
+              <a class="header__link site-list__link" href="#contacts"
+                >Как нас найти</a
+              >
             </li>
           </ul>
         </nav>
@@ -67,7 +73,7 @@
         </div>
       </section>
 
-      <section class="section features">
+      <section class="section features" id="features">
         <div class="container">
           <h2 class="section__heading features__heading">Почему мы?</h2>
           <ul class="features__list">
@@ -123,7 +129,7 @@
         </div>
       </section>
 
-      <section class="rooms section">
+      <section class="rooms section" id="rooms">
         <div class="container">
           <h2 class="rooms__heading section__heading">Номера</h2>
           <div class="owl-carousel owl-theme owl1">
@@ -231,7 +237,7 @@
         </div>
       </section>
 
-      <section class="feedback section">
+      <section class="feedback section" id="feedback">
         <div class="container">
           <h2 class="feedback__heading section__heading">Отзывы</h2>
           <ul class="feedback__list owl-carousel owl-theme owl2">
@@ -295,14 +301,15 @@
         </div>
       </section>
 
-      <section class="section contacts">
-        <div class="container">
+      <section class="section contacts" id="contacts">
+        <div class="container contacts__container">
           <h2 class="section__heading contacts__heading">Как нас найти</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__name">Адрес</h3>
               <p class="contacts__text">
-                Санкт-Петербург, ул Большая Конюшенная, д 19
+                Санкт-Петербург, <br />
+                ул Большая Конюшенная, д 19
               </p>
             </li>
             <li class="contacts__item">
@@ -347,6 +354,7 @@
             </li>
           </ul>
         </div>
+        <div class="contacts__map map" id="map"></div>
       </section>
     </main>
 
@@ -365,16 +373,16 @@
         <nav class="navigation">
           <ul class="site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="">Почему мы?</a>
+              <a class="site-list__link" href="#features">Почему мы?</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Номера</a>
+              <a class="site-list__link" href="#rooms">Номера</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Отзывы</a>
+              <a class="site-list__link" href="#feedback">Отзывы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Как нас найти</a>
+              <a class="site-list__link" href="#contacts">Как нас найти</a>
             </li>
           </ul>
         </nav>
@@ -389,6 +397,10 @@
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=72249ffd-f3f3-46a8-97d7-88b32d995b11&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
