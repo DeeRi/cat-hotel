@@ -45,6 +45,7 @@ function init() {
   );
 }
 
+
 let burger = document.querySelector(".menu-button");
 let mainNav = document.querySelector(".header__navigation");
 
@@ -60,4 +61,10 @@ burger.addEventListener("click", function() {
     mainNav.classList.remove("header__navigation--open");
     mainNav.classList.add("header__navigation--close");
   }
+});
+
+
+$('.menu-button').click(function(){
+  $(this).toggleClass('clicked');
+  $(".header--main").toggleClass('clicked');
 });

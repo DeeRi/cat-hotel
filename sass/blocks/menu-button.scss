@@ -1,23 +1,28 @@
 .menu-button {
-    width: 24px;
-    height: 18px;
-    border: none;
-    background-color: #ffffff;
-    &--open {
-      background-image: url("../img/menu-button__open.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  width: 24px;
+  height: 18px;
+  border: none;
+  background-color: #ffffff;
   
-    &--close {
-      background-image: url("../img/menu-button__close.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &--open {
+    background-image: url("../img/menu-button__open.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  @media (min-width: $tablet-width) {
-    .menu-button {
-    display: none;
-    }
+  &--close {
+    background-image: url("../img/menu-button__close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
+}
+
+.clicked {
+  background-color: #fac663;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-button {
+    display: none;
+  }
+}

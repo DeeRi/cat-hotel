@@ -106,12 +106,31 @@ img {
     margin-bottom: 25px;
   }
 
-  .header__navigation--closed .site-list__item {
+  .header__phone {
+    display: block;
+    padding-bottom: 25px;
+    font-family: "Rubik", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #1a212f;
+  }
+
+  .header__navigation--closed .site-list__item,
+.header__navigation--closed .header__contacts {
     display: none;
   }
 
-  .header__navigation--open .site-list__item {
+  .header__navigation--open .site-list__item,
+.header__navigation--open .header__contacts {
     display: block;
+  }
+
+  .header__navigation--open {
+    padding-bottom: 188px;
+    padding-top: 50px;
   }
 
   .header__navigation--nojs .header__toggle {
@@ -128,6 +147,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .header__contacts {
+    display: none;
   }
 }
 .promo {
@@ -225,6 +248,10 @@ img {
   background-position: center;
 }
 
+.clicked {
+  background-color: #fac663;
+}
+
 @media (min-width: 768px) {
   .menu-button {
     display: none;
@@ -250,6 +277,9 @@ img {
 .order-button--red {
   background-color: #ff7236;
   color: #fffefd;
+}
+.order-button:hover {
+  cursor: pointer;
 }
 
 .site-list {
@@ -518,7 +548,7 @@ img {
 }
 
 .social-list__item {
-  margin-right: 18px;
+  margin-right: 20px;
 }
 .social-list__item:last-child {
   margin-right: 0;
@@ -532,14 +562,14 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-.social-list__link--facebook {
-  background-image: url("../img/fb.svg");
+.social-list__link--fb {
+  background-image: url("../img/social3.svg");
 }
 .social-list__link--inst {
-  background-image: url("../img/inst.svg");
+  background-image: url("../img/social2.svg");
 }
-.social-list__link--fb {
-  background-image: url("../img/vk.svg");
+.social-list__link--vk {
+  background-image: url("../img/social1.svg");
 }
 
 .contacts {
@@ -617,6 +647,15 @@ img {
 .footer__link {
   text-decoration: none;
   color: #8f8f8f;
+}
+
+.modal__input {
+  width: 260px;
+  height: 52px;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
