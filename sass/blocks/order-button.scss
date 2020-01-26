@@ -22,8 +22,16 @@
     background-color: #ff7236;
     color: #fffefd;
   }
-  
   &:hover {
     cursor: pointer;
-  }
+    color: #1a212f;
+    background-color: #ff7236;
+}
+&:active,
+&:focus {
+  cursor: pointer;
+  color: #1a212f;
+  background-color: #d8571f;
+
+}
 }

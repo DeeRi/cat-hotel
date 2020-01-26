@@ -284,6 +284,13 @@ img {
 }
 .order-button:hover {
   cursor: pointer;
+  color: #1a212f;
+  background-color: #ff7236;
+}
+.order-button:active, .order-button:focus {
+  cursor: pointer;
+  color: #1a212f;
+  background-color: #d8571f;
 }
 
 .site-list {
@@ -305,6 +312,12 @@ img {
   color: #1a212f;
   text-decoration: none;
   width: 128px;
+}
+.site-list__link:hover {
+  color: #ff7236;
+}
+.site-list__link:active, .site-list__link:focus {
+  color: #d8571f;
 }
 
 .features__list {
@@ -652,6 +665,14 @@ img {
 .footer__link {
   text-decoration: none;
   color: #8f8f8f;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  color: #8f8f8f;
+}
+.footer__link:active, .footer__link:focus {
+  text-decoration: underline;
+  color: #6b6464;
 }
 
 .modal__input {

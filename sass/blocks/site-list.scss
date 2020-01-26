@@ -15,4 +15,12 @@
   color: $primary-text-color;
   text-decoration: none;
   width: 128px;
+
+&:hover {
+  color: #ff7236;
+  }
+  &:active,
+  &:focus {
+    color: #d8571f;
+    }
 }

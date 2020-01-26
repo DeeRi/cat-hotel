@@ -8,4 +8,15 @@
 .footer__link {
   text-decoration: none;
   color: #8f8f8f;
+  
+  &:hover {
+    text-decoration: underline;
+    color: #8f8f8f;
+  }
+
+  &:active, 
+  &:focus {
+    text-decoration: underline;
+    color: #6b6464;
+  }
 }
