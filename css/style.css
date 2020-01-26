@@ -143,6 +143,10 @@ img {
 }
 
 @media (min-width: 768px) {
+  .header {
+    background-color: #ffffff;
+  }
+
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -594,6 +598,7 @@ img {
   padding: 0;
   list-style: none;
   line-height: 18px;
+  padding: 40px;
 }
 
 .contacts__item {

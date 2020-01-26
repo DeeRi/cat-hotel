@@ -18,6 +18,7 @@
 .contacts__list {
   @include reset-list;
   line-height: 18px;
+  padding: 40px;
 }
 
 .contacts__item {
