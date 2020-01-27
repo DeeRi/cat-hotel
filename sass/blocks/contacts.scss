@@ -35,6 +35,11 @@
 
 .contacts__text {
   margin: 0;
+
+  &--phone {
+    text-decoration: none;
+    color: $primary-text-color;
+  }
 }
 
 
@@ -60,7 +65,7 @@
   
   .contacts__map {
     background-image: url("../img/map_desktop.png");
-    left: 551px;
+    left: 40.85%;
     width: 798px;
   }
   }

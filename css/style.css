@@ -637,6 +637,10 @@ img {
 .contacts__text {
   margin: 0;
 }
+.contacts__text--phone {
+  text-decoration: none;
+  color: #1a212f;
+}
 
 @media (min-width: 768px) {
   .contacts {
@@ -659,7 +663,7 @@ img {
 
   .contacts__map {
     background-image: url("../img/map_desktop.png");
-    left: 551px;
+    left: 40.85%;
     width: 798px;
   }
 }
