@@ -1,7 +1,7 @@
 .order-button {
   display: block;
   box-sizing: border-box;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -21,27 +21,27 @@
   background-repeat: no-repeat;
 
   &--white {
-    background-color: #fffefd;
-    color: #1a212f;
+    background-color: $main-background;
+    color: $primary-text-color;
     background-image: url("../img/paw_red.svg");
   }
 
   &--red {
-    background-color: #ff7236;
-    color: #fffefd;
+    background-color: $orange;
+    color: $main-background;
     background-image: url("../img/paw_white.svg");
   }
 
   &:hover {
     cursor: pointer;
-    color: #1a212f;
-    background-color: #ff7236;
+    color: $primary-text-color;
+    background-color: $orange;
   }
   
   &:active,
   &:focus {
     cursor: pointer;
-    color: #1a212f;
-    background-color: #d8571f;
+    color: $primary-text-color;
+    background-color: $darker-orange;
   }
 }

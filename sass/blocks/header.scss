@@ -11,7 +11,7 @@
 
   .header--main .site-list__link {
     text-decoration: none;
-    font-family: "Rubik", Arial, sans-serif;
+    font-family: $font-secondary;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -23,7 +23,7 @@
   .header__phone {
     display: block;
     padding-bottom: 25px;
-    font-family: "Rubik", Arial, sans-serif;
+    font-family: $font-secondary;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -59,7 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    background-color: #ffffff;
+    background-color: $main-background;
   }
   
   .header__container {

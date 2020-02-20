@@ -7,7 +7,7 @@
 
 .site-list__link {
   display: block;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -17,10 +17,10 @@
   width: 128px;
 
 &:hover {
-  color: #ff7236;
+  color: $orange;
   }
   &:active,
   &:focus {
-    color: #d8571f;
+    color: $darker-orange;
     }
 }

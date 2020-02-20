@@ -1,7 +1,26 @@
-$color-dark: #1a212f;
+//color
+$dark: #1a212f;
+$light-yellow: #fac663;
+$white: #ffffff;
+$orange: #ff7236;
+$darker-orange: #d8571f;
+$grey: #8f8f8f;
+$darker-grey: #848484;
+$darkest-grey: #6b6464;
 
-$primary-text-color: $color-dark;
+$primary-text-color: $dark;
+$main-background: $white;
+$secondary-background: $light-yellow;
+$feedback-text: $darker-grey;
+$footer-text: $grey;
+$footer-text-focus: $darkest-grey;
 
+
+//font
+$rubik: "Rubik", "Arial", sans-serif;
+$lato: "Lato", "Arial", sans-serif;
+$font-main: $lato;
+$font-secondary: $rubik;
 
 //width
 $tablet-width: 768px;

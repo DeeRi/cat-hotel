@@ -1,10 +1,10 @@
 body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: $font-main;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
-  color: #1a212f;
+  color: $primary-text-color;
   min-width: 320px;
 }
 
@@ -30,7 +30,7 @@ img {
 }
 
 .section__heading {
-  font-family: "Rubik", Arial, sans-serif;
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;

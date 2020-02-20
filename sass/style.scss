@@ -1,3 +1,4 @@
+@import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
 @import "global/variables.scss";
@@ -10,10 +11,8 @@
 @import "blocks/order-button.scss";
 @import "blocks/site-list.scss";
 @import "blocks/features.scss";
-@import "blocks/rooms.scss";
 @import "blocks/room-card.scss";
 @import "blocks/feedback.scss";
 @import "blocks/social-list.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
-@import "blocks/modal.scss";
